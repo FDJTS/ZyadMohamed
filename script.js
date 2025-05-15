@@ -1,20 +1,16 @@
-const toggleButton = document.getElementById('theme-toggle');
-const htmlElement = document.documentElement;
+const toggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
 
-// تحقق من التفضيل المخزن في localStorage أو تفضيل النظام
-const userPreference = localStorage.getItem('theme');
-const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-
-if (userPreference) {
-  htmlElement.setAttribute('data-theme', userPreference);
-} else {
-  htmlElement.setAttribute('data-theme', systemPreference);
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  root.setAttribute('data-theme', savedTheme);
+  toggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
 }
 
-toggleButton.addEventListener('click', () => {
-  const currentTheme = htmlElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-  htmlElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  toggleButton.textContent = newTheme === 'light' ? '🌙' : '☀️';
+toggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  toggle.textContent = next === 'dark' ? '☀️' : '🌙';
 });
