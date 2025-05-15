@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>زياد محمد | مطور ويب</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container header-flex">
       <h1>زياد محمد</h1>
       <nav>
         <ul>
-          <li><a href="#about">عنّي</a></li>
+          <li><a href="#about">من أنا</a></li>
           <li><a href="#projects">المشاريع</a></li>
-          <li><a href="#contact">تواصل</a></li>
-          <li><button id="theme-toggle" aria-label="تبديل الثيم">🌙</button></li>
+          <li><a href="#contact">تواصل معي</a></li>
+          <li><a href="https://github.com/FDJTS" target="_blank">جيت هاب</a></li>
+          <li><a href="https://www.youtube.com/@FDJTS" target="_blank">يوتيوب</a></li>
+          <li><a href="https://twitter.com/FDJTS" target="_blank">تويتر (X)</a></li>
+          <li><a href="https://instagram.com/FDJTS" target="_blank">إنستجرام</a></li>
+          <li><a href="https://twitch.tv/FDJTS" target="_blank">تويتش</a></li>
+          <li><button id="theme-toggle" aria-label="تغيير الوضع">🌙</button></li>
+          <li><button id="lang-toggle" aria-label="تغيير اللغة">English 🌐</button></li>
         </ul>
       </nav>
     </div>
@@ -24,42 +31,49 @@
   <main>
     <section id="hero">
       <div class="container">
-        <h2>أهلاً بيك في موقعي الشخصي!</h2>
-        <p>أنا زياد، مطور ويب بصنع مواقع احترافية وعصرية باستخدام تقنيات حديثة.</p>
-        <a href="#projects" class="btn">شوف شغلي</a>
+        <h2>مرحبًا بك في موقعي</h2>
+        <p>أنا زياد، مطور ويب متخصص في إنشاء مواقع حديثة وسريعة الاستجابة.</p>
+        <a href="#projects" class="btn">اعرض أعمالي</a>
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <h2>عنّي</h2>
-        <p>أنا شغوف بالبرمجة وتصميم المواقع، بشتغل على مشاريع باستخدام HTML, CSS, JavaScript، وبحب أتعلم تقنيات جديدة كل يوم.</p>
+        <h2>من أنا</h2>
+        <p>أنا شغوف بتطوير الويب وبناء مواقع تفاعلية ونظيفة باستخدام HTML, CSS, JavaScript. أحب تعلم التقنيات الجديدة باستمرار.</p>
+        <ul>
+          <li>🔧 البرمجة: HTML، CSS، JavaScript & Python</li>
+          <li>🎮 تطوير ألعاب: محرك Godot (ثلاثية الأبعاد)</li>
+          <li>💻 أنظمة التشغيل: Windows و Linux (Arch btw)</li>
+          <li>📚 أقوم أيضًا بتعليم البرمجة</li>
+        </ul>
       </div>
     </section>
 
     <section id="projects">
       <div class="container">
-        <h2>مشاريعي</h2>
+        <h2>المشاريع</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <h3>موقع شخصي</h3>
-            <p>موقع تعريفي باستخدام HTML وCSS وJS.</p>
+            <h3>موقعي الشخصي</h3>
+            <p>موقع بورتفوليو احترافي متعدد اللغات مع دعم للوضع الليلي.</p>
           </div>
           <div class="project-card">
-            <h3>لعبة ويب بسيطة</h3>
-            <p>لعبة تفاعلية باستخدام JavaScript.</p>
+            <h3>لعبة ويب</h3>
+            <p>لعبة تصويب تفاعلية في المتصفح باستخدام Godot.</p>
           </div>
-          <!-- أضف مشاريع تانية هنا -->
+          <div class="project-card">
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="container">
-        <h2>تواصل معايا</h2>
+        <h2>تواصل معي</h2>
         <form>
-          <input type="text" placeholder="الاسم" required>
-          <input type="email" placeholder="البريد الإلكتروني" required>
+          <input type="text" placeholder="اسمك" required>
+          <input type="email" placeholder="بريدك الإلكتروني" required>
           <textarea placeholder="رسالتك" required></textarea>
           <button type="submit">إرسال</button>
         </form>
@@ -69,7 +83,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 زياد محمد - كل الحقوق محفوظة</p>
+      <p>© 2025 زياد محمد - جميع الحقوق محفوظة</p>
     </div>
   </footer>
 
