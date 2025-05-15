@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>زياد محمد | مطور مواقع</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>زياد محمد | مطور ويب</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -12,9 +12,9 @@
       <h1>زياد محمد</h1>
       <nav>
         <ul>
-          <li><a href="#about">عنّي</a></li>
-          <li><a href="#projects">المشاريع</a></li>
-          <li><a href="#contact">تواصل</a></li>
+          <li><a href="#about">نبذة عني</a></li>
+          <li><a href="#projects">مشاريعي</a></li>
+          <li><a href="#contact">تواصل معي</a></li>
           <li><button id="theme-toggle" aria-label="تغيير الوضع">🌙</button></li>
           <li><button id="lang-toggle" aria-label="تغيير اللغة">English 🌐</button></li>
         </ul>
@@ -25,16 +25,16 @@
   <main>
     <section id="hero">
       <div class="container">
-        <h2>أهلاً بيك في موقعي الشخصي</h2>
-        <p>أنا زياد، مطور ويب بصمم مواقع احترافية وحديثة وسريعة.</p>
-        <a href="#projects" class="btn">شوف أعمالي</a>
+        <h2>مرحبًا بكم في موقعي</h2>
+        <p>أنا زياد، مطور ويب شغوف ببناء مواقع حديثة وسريعة ومتجاوبة.</p>
+        <a href="#projects" class="btn">شاهد مشاريعي</a>
       </div>
     </section>
 
     <section id="about">
       <div class="container">
-        <h2>من أنا؟</h2>
-        <p>أنا شغوف بتطوير الويب وبحب أشتغل على مواقع تفاعلية وعصرية باستخدام HTML, CSS, JavaScript، وكمان بلعب ألعاب وبتعلم تقنيات جديدة دايمًا.</p>
+        <h2>نبذة عني</h2>
+        <p>أحب إنشاء مواقع تفاعلية وأنيقة باستخدام HTML وCSS وJavaScript. كما أستمتع بالألعاب وتعلم التقنيات الجديدة يوميًا.</p>
       </div>
     </section>
 
@@ -44,11 +44,11 @@
         <div class="projects-grid">
           <div class="project-card">
             <h3>موقعي الشخصي</h3>
-            <p>موقع تعريفي شخصي باستخدام HTML, CSS, JavaScript.</p>
+            <p>موقع شخصي حديث مبني بـ HTML وCSS وJavaScript.</p>
           </div>
           <div class="project-card">
             <h3>لعبة ويب بسيطة</h3>
-            <p>لعبة تفاعلية أونلاين مبنية بجافاسكريبت.</p>
+            <p>لعبة تفاعلية على المتصفح مبنية باستخدام JavaScript.</p>
           </div>
           <div class="project-card">
           </div>
@@ -56,13 +56,25 @@
       </div>
     </section>
 
+    <section id="signin">
+      <div class="container">
+        <h2>تسجيل الدخول</h2>
+        <form id="signin-form">
+          <input type="text" id="username" placeholder="أدخل اسمك" required />
+          <button type="submit">دخول</button>
+        </form>
+        <p id="welcome-message"></p>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
-        <h2>تواصل معايا</h2>
-        <form>
-          <input type="text" placeholder="اسمك" required>
-          <input type="email" placeholder="بريدك الإلكتروني" required>
-          <textarea placeholder="رسالتك" required></textarea>
+        <h2>تواصل معي</h2>
+        <form action="https://formsubmit.co/zyadmohamed343@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="اسمك" required />
+          <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
+          <textarea name="message" placeholder="رسالتك" required></textarea>
+          <input type="hidden" name="_captcha" value="false">
           <button type="submit">إرسال</button>
         </form>
       </div>
@@ -70,13 +82,13 @@
 
     <section id="social">
       <div class="container">
-        <h2>تابعني على</h2>
+        <h2>تابعني</h2>
         <ul class="social-links">
-          <li><a href="https://github.com/FDJTS/ZyadMohamed" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/FDJTS" target="_blank">GitHub</a></li>
           <li><a href="https://www.youtube.com/@FDJTS" target="_blank">YouTube</a></li>
-          <li><a href="https://twitter.com/FDJTS" target="_blank">X (تويتر)</a></li>
+          <li><a href="https://twitter.com/fdjts1" target="_blank">X (Twitter)</a></li>
           <li><a href="https://www.instagram.com/fdjts1" target="_blank">Instagram</a></li>
-          <li><a href="https://www.twitch.tv/FDJJTS" target="_blank">Twitch</a></li>
+          <li><a href="https://www.twitch.tv/fdjjts" target="_blank">Twitch</a></li>
         </ul>
       </div>
     </section>
@@ -84,7 +96,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 زياد محمد - جميع الحقوق محفوظة</p>
+      <p>© 2025 زياد محمد – كل الحقوق محفوظة.</p>
     </div>
   </footer>
 
