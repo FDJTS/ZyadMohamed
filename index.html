@@ -1,45 +1,78 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>زياد محمد</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>زياد محمد | مطور ويب</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-<div class="language-switch">
-  <a href="index-en.html" class="lang-btn">English</a>
-</div>
-    <h1>زياد محمد</h1>
-    <p>مرحبًا بك في موقعي الشخصي!</p>
+    <div class="container">
+      <h1>زياد محمد</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">عنّي</a></li>
+          <li><a href="#projects">المشاريع</a></li>
+          <li><a href="#contact">تواصل</a></li>
+          <li><button id="theme-toggle" aria-label="تبديل الثيم">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="section">
-      <h2>من أنا</h2>
-      <p>مرحبًا، اسمي زياد محمد، وعمري 15 سنة. أنا شغوف بالتكنولوجيا والإبداع.</p>
+    <section id="hero">
+      <div class="container">
+        <h2>أهلاً بيك في موقعي الشخصي!</h2>
+        <p>أنا زياد، مطور ويب بصنع مواقع احترافية وعصرية باستخدام تقنيات حديثة.</p>
+        <a href="#projects" class="btn">شوف شغلي</a>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>هواياتي</h2>
-      <p>أحب البرمجة ولعب ألعاب الفيديو. هذه الهوايات تبقيني متحمسًا ومتعلمًا باستمرار.</p>
+    <section id="about">
+      <div class="container">
+        <h2>عنّي</h2>
+        <p>أنا شغوف بالبرمجة وتصميم المواقع، بشتغل على مشاريع باستخدام HTML, CSS, JavaScript، وبحب أتعلم تقنيات جديدة كل يوم.</p>
+      </div>
     </section>
 
-    <section class="section">
-      <h2>معرض الصور</h2>
-      <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" alt="حاسوب على المكتب مع قهوة" class="gif" />
+    <section id="projects">
+      <div class="container">
+        <h2>مشاريعي</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>موقع شخصي</h3>
+            <p>موقع تعريفي باستخدام HTML وCSS وJS.</p>
+          </div>
+          <div class="project-card">
+            <h3>لعبة ويب بسيطة</h3>
+            <p>لعبة تفاعلية باستخدام JavaScript.</p>
+          </div>
+          <!-- أضف مشاريع تانية هنا -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>تواصل معايا</h2>
+        <form>
+          <input type="text" placeholder="الاسم" required>
+          <input type="email" placeholder="البريد الإلكتروني" required>
+          <textarea placeholder="رسالتك" required></textarea>
+          <button type="submit">إرسال</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; جميع الحقوق محفوظة 2025.</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/" target="_blank" class="bx bxl-facebook"></a>
-      <a href="https://www.twitter.com/" target="_blank" class="bx bxl-twitter"></a>
-      <a href="https://www.instagram.com/" target="_blank" class="bx bxl-instagram"></a>
+    <div class="container">
+      <p>© 2025 زياد محمد - كل الحقوق محفوظة</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
