@@ -1,105 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>زياد محمد | مطور ويب</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>زياد محمد</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">نبذة عني</a></li>
-          <li><a href="#projects">مشاريعي</a></li>
-          <li><a href="#contact">تواصل معي</a></li>
-          <li><button id="theme-toggle" aria-label="تغيير الوضع">🌙</button></li>
-          <li><button id="lang-toggle" aria-label="تغيير اللغة">English 🌐</button></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="hero">
-      <div class="container">
-        <h2>مرحبًا بكم في موقعي</h2>
-        <p>أنا زياد، مطور ويب شغوف ببناء مواقع حديثة وسريعة ومتجاوبة.</p>
-        <a href="#projects" class="btn">شاهد مشاريعي</a>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <h2>نبذة عني</h2>
-        <p>أحب إنشاء مواقع تفاعلية وأنيقة باستخدام HTML وCSS وJavaScript. كما أستمتع بالألعاب وتعلم التقنيات الجديدة يوميًا.</p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <h2>مشاريعي</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>موقعي الشخصي</h3>
-            <p>موقع شخصي حديث مبني بـ HTML وCSS وJavaScript.</p>
-          </div>
-          <div class="project-card">
-            <h3>لعبة ويب بسيطة</h3>
-            <p>لعبة تفاعلية على المتصفح مبنية باستخدام JavaScript.</p>
-          </div>
-          <div class="project-card">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="signin">
-      <div class="container">
-        <h2>تسجيل الدخول</h2>
-        <form id="signin-form">
-          <input type="text" id="username" placeholder="أدخل اسمك" required />
-          <button type="submit">دخول</button>
-        </form>
-        <p id="welcome-message"></p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2>تواصل معي</h2>
-        <form action="https://formsubmit.co/zyadmohamed343@gmail.com" method="POST">
-          <input type="text" name="name" placeholder="اسمك" required />
-          <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
-          <textarea name="message" placeholder="رسالتك" required></textarea>
-          <input type="hidden" name="_captcha" value="false">
-          <button type="submit">إرسال</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="social">
-      <div class="container">
-        <h2>تابعني</h2>
-        <ul class="social-links">
-          <li><a href="https://github.com/FDJTS" target="_blank">GitHub</a></li>
-          <li><a href="https://www.youtube.com/@FDJTS" target="_blank">YouTube</a></li>
-          <li><a href="https://twitter.com/fdjts1" target="_blank">X (Twitter)</a></li>
-          <li><a href="https://www.instagram.com/fdjts1" target="_blank">Instagram</a></li>
-          <li><a href="https://www.twitch.tv/fdjjts" target="_blank">Twitch</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 زياد محمد – كل الحقوق محفوظة.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
